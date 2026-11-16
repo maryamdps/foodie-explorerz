@@ -47,3 +47,69 @@
   .card p{font-size:13px}
   .footer{font-size:9px}
 }
+
+/* Second readability pass: make all supporting text and controls clearly legible */
+body{font-size:16px}
+.topline{font-size:11px}
+.brand-word{font-size:12px}
+.nav,.nav a{font-size:14px}
+.eyebrow,.kicker{font-size:13px;letter-spacing:.15em}
+.body-copy,.page-hero .body-copy{font-size:17px;line-height:1.8}
+.lead{font-size:25px}
+.btn{font-size:14px;padding:19px 23px}
+.text-link{font-size:14px}
+.metric-intro{font-size:22px}
+.metric small{font-size:12px}
+.service .num{font-size:13px}
+.service h3{font-size:30px}
+.service p{font-size:15px;line-height:1.75}
+.card .kicker{font-size:12px}
+.card h3{font-size:31px}
+.card p{font-size:15px;line-height:1.75}
+.card a{font-size:14px}
+.quote p{font-size:19px}
+.quote cite{font-size:12px}
+.footer{font-size:12px}
+.feature h3{font-size:29px}
+.feature p{font-size:15px}
+.tag{font-size:13px}
+.work-placeholder small{font-size:12px}
+.work-placeholder strong{font-size:30px}
+.form label{font-size:14px}
+.form input,.form textarea,.form select{font-size:16px;padding:16px}
+.form-note,.notice{font-size:15px}
+.guide-tile span{font-size:12px}
+.guide-tile h3{font-size:30px}
+.cta p{font-size:15px}
+.cta-aside{font-size:11px}
+@media(max-width:900px){
+  .nav a{font-size:13px}
+  .body-copy,.page-hero .body-copy{font-size:16px}
+}
+@media(max-width:650px){
+  .topline{font-size:9px}
+  .brand-word{font-size:11px}
+  .nav a{font-size:16px}
+  .hero h1{font-size:clamp(58px,13vw,72px)}
+  .page-hero h1{font-size:clamp(54px,12vw,68px)}
+  .body-copy,.page-hero .body-copy{font-size:16px;line-height:1.75}
+  .eyebrow,.kicker{font-size:11px}
+  .lead{font-size:22px}
+  .btn{font-size:14px;padding:17px 20px}
+  .text-link{font-size:13px}
+  .service h3{font-size:24px}
+  .service p{font-size:14px}
+  .card h3{font-size:29px}
+  .card p{font-size:15px}
+  .metric small{font-size:11px}
+  .quote p{font-size:18px}
+  .footer{font-size:10px}
+  .feature h3{font-size:26px}
+  .feature p{font-size:14px}
+  .form label{font-size:13px}
+  .form input,.form textarea,.form select{font-size:16px}
+  .form-note,.notice{font-size:14px}
+  .guide-tile h3{font-size:28px}
+  .guide-tile span{font-size:11px}
+  .cta p{font-size:14px}
+}
