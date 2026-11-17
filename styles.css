@@ -232,3 +232,15 @@ body { font-size: 18px; }
 .btn, button.btn, a.btn, input[type="submit"], .form button {
   font-size: 20px !important;
 }
+
+
+/* Hard minimum for all non-heading text. Explicitly override earlier
+   component and mobile rules so small labels cannot slip through. */
+body *:not(h1):not(h2):not(h3):not(.brand-symbol):not(.roundel) {
+  font-size: 20px !important;
+}
+@media (max-width: 650px) {
+  body *:not(h1):not(h2):not(h3):not(.brand-symbol):not(.roundel) {
+    font-size: 20px !important;
+  }
+}
