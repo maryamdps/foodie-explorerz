@@ -217,30 +217,3 @@ body { font-size: 18px; }
   .guide-tile span { font-size: 12px; }
   .cta p { font-size: 16px; }
 }
-
-
-/* Accessibility rule requested: no supporting text smaller than 20px.
-   Display headings retain their larger existing sizes. */
-:where(p, a, button, label, small, li, cite, input, textarea, select,
-  .topline, .brand-word, .nav, .nav a, .eyebrow, .kicker, .body-copy,
-  .text-link, .metric-intro, .metric small, .service .num, .service p,
-  .card .kicker, .card p, .card a, .quote p, .quote cite, .footer,
-  .feature p, .tag, .work-placeholder small, .form-note, .notice,
-  .guide-tile span, .cta p, .cta-aside) {
-  font-size: max(20px, 1em) !important;
-}
-.btn, button.btn, a.btn, input[type="submit"], .form button {
-  font-size: 20px !important;
-}
-
-
-/* Hard minimum for all non-heading text. Explicitly override earlier
-   component and mobile rules so small labels cannot slip through. */
-body *:not(h1):not(h2):not(h3):not(.brand-symbol):not(.roundel) {
-  font-size: 20px !important;
-}
-@media (max-width: 650px) {
-  body *:not(h1):not(h2):not(h3):not(.brand-symbol):not(.roundel) {
-    font-size: 20px !important;
-  }
-}
