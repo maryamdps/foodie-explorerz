@@ -113,3 +113,39 @@ body{font-size:16px}
   .guide-tile span{font-size:11px}
   .cta p{font-size:14px}
 }
+
+
+/* Button labels: deliberately larger for clear, comfortable reading */
+.btn,
+button.btn,
+a.btn,
+input[type="submit"],
+.form button,
+.nav .nav-button {
+  font-size: 18px !important;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.btn,
+button.btn,
+a.btn,
+.form button {
+  padding: 20px 26px;
+}
+.nav .nav-button {
+  font-size: 14px !important;
+  padding: 15px 20px;
+}
+@media(max-width:650px) {
+  .btn,
+  button.btn,
+  a.btn,
+  input[type="submit"],
+  .form button {
+    font-size: 17px !important;
+    padding: 18px 22px;
+  }
+  .nav .nav-button {
+    font-size: 15px !important;
+  }
+}
