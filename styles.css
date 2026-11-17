@@ -217,3 +217,58 @@ body { font-size: 18px; }
   .guide-tile span { font-size: 12px; }
   .cta p { font-size: 16px; }
 }
+
+
+/* Requested type scale: 22px body copy and controls; display headings stay larger */
+body p,
+.body-copy,
+.page-hero .body-copy,
+.service p,
+.card p,
+.feature p,
+.quote p,
+.cta p,
+.notice,
+.form-note,
+.form label,
+.form input,
+.form textarea,
+.form select,
+.btn,
+button,
+input[type="submit"],
+.form button,
+.text-link {
+  font-size: 22px !important;
+}
+.btn,
+button.btn,
+a.btn,
+input[type="submit"],
+.form button {
+  line-height: 1.25;
+  padding: 20px 26px;
+}
+@media (max-width: 650px) {
+  body p,
+  .body-copy,
+  .page-hero .body-copy,
+  .service p,
+  .card p,
+  .feature p,
+  .quote p,
+  .cta p,
+  .notice,
+  .form-note,
+  .form label,
+  .form input,
+  .form textarea,
+  .form select,
+  .btn,
+  button,
+  input[type="submit"],
+  .form button,
+  .text-link {
+    font-size: 22px !important;
+  }
+}
