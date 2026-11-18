@@ -294,3 +294,21 @@ body p:not(.kicker):not(.eyebrow),
  }
  .nav a{font-size:17px}
 }
+
+
+/* Header navigation spacing and city guide cards */
+.nav{gap:22px}
+.nav a{white-space:nowrap}
+.nav .nav-button{margin-left:6px;padding-left:22px;padding-right:22px}
+.blog-cities{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.blog-city{min-height:245px;padding:25px;background:var(--paper);display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--line);transition:transform .2s}
+.blog-city:hover{transform:translateY(-4px)}
+.blog-city .city-no{font-size:13px;letter-spacing:.14em;color:var(--accent);font-weight:700}
+.blog-city h3{font:500 34px/1.05 var(--serif);margin:18px 0 10px}
+.blog-city p{font-size:18px!important;line-height:1.5;color:var(--muted);margin:0}
+.blog-city .city-status{font-size:14px;letter-spacing:.1em;font-weight:700;text-transform:uppercase;margin-top:24px}
+.blog-city.featured{background:var(--ink);color:var(--cream)}
+.blog-city.featured p{color:#c8c6bd}
+.blog-city.featured .city-no,.blog-city.featured .city-status{color:#e8a18b}
+@media(max-width:900px){.blog-cities{grid-template-columns:repeat(2,minmax(0,1fr))}.nav{gap:14px}}
+@media(max-width:650px){.blog-cities{grid-template-columns:1fr}.blog-city{min-height:190px}.nav{gap:12px}.nav a{white-space:normal}}
