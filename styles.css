@@ -272,3 +272,25 @@ input[type="submit"],
     font-size: 22px !important;
   }
 }
+
+
+/* 22px reading scale: body copy and action controls; display headings retain hierarchy */
+body p:not(.kicker):not(.eyebrow),
+.body-copy,.page-hero .body-copy,.service p,.card p,.feature p,.quote p,.cta p,
+.notice,.form-note,.form label,.form input,.form textarea,.form select,
+.btn,button,input[type="submit"],.form button,.text-link {
+  font-size:22px !important;
+  line-height:1.55;
+}
+.nav { gap:16px; }
+.nav a { font-size:13px; }
+.nav .nav-button { font-size:14px !important; }
+@media(max-width:900px){.nav{gap:15px}.nav a{font-size:13px}}
+@media(max-width:650px){
+ body p:not(.kicker):not(.eyebrow),.body-copy,.page-hero .body-copy,.service p,.card p,
+ .feature p,.quote p,.cta p,.notice,.form-note,.form label,.form input,.form textarea,
+ .form select,.btn,button,input[type="submit"],.form button,.text-link {
+  font-size:22px !important;line-height:1.5;
+ }
+ .nav a{font-size:17px}
+}
