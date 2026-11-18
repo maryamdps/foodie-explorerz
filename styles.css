@@ -363,3 +363,62 @@ body p:not(.kicker):not(.eyebrow),
   .feature h3 { font-size: 24px; }
   .lead, .metric-intro { font-size: 19px; }
 }
+
+
+/* Further reduce the overall type scale; preserve the header CTA size */
+body { font-size: 15px; }
+body p:not(.kicker):not(.eyebrow),
+.body-copy, .page-hero .body-copy,
+.service p, .card p, .feature p, .quote p, .cta p,
+.notice, .form-note {
+  font-size: 15px !important;
+  line-height: 1.65;
+}
+.display { font-size: clamp(46px, 6vw, 78px); }
+.h2 { font-size: clamp(36px, 4.2vw, 58px); }
+.hero h1 { font-size: clamp(46px, 6vw, 78px); }
+.page-hero h1 { font-size: clamp(44px, 5.5vw, 72px); }
+.lead, .metric-intro { font-size: 19px; }
+.eyebrow, .kicker { font-size: 10px; }
+.service h3 { font-size: 24px; }
+.card h3, .guide-tile h3 { font-size: 25px; }
+.feature h3 { font-size: 24px; }
+.quote p { font-size: 16px !important; }
+.text-link, .card a { font-size: 13px !important; }
+.metric strong { font-size: 36px; }
+.metric small, .form label { font-size: 12px; }
+.form input, .form textarea, .form select { font-size: 15px !important; }
+.form-note, .notice { font-size: 14px !important; }
+.btn, button, input[type="submit"], .form button {
+  font-size: 15px !important;
+  padding: 15px 20px;
+}
+/* Header CTA remains unchanged */
+.nav a { font-size: 12px; }
+.nav .nav-button { font-size: 14px !important; padding: 15px 20px; }
+@media(max-width:900px) {
+  .hero h1 { font-size: clamp(44px, 7vw, 68px); }
+  .page-hero h1 { font-size: clamp(42px, 6.5vw, 64px); }
+}
+@media(max-width:650px) {
+  body p:not(.kicker):not(.eyebrow),
+  .body-copy, .page-hero .body-copy,
+  .service p, .card p, .feature p, .quote p, .cta p,
+  .notice, .form-note {
+    font-size: 15px !important;
+    line-height: 1.6;
+  }
+  .hero h1 { font-size: 48px; }
+  .page-hero h1 { font-size: 46px; }
+  .h2 { font-size: 38px; }
+  .nav a { font-size: 16px; }
+  .nav .nav-button { font-size: 15px !important; }
+  .btn, button, input[type="submit"], .form button {
+    font-size: 15px !important;
+    padding: 14px 18px;
+  }
+  .service h3 { font-size: 22px; }
+  .card h3, .guide-tile h3 { font-size: 24px; }
+  .feature h3 { font-size: 22px; }
+  .lead, .metric-intro { font-size: 18px; }
+}
